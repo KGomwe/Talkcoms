@@ -510,6 +510,44 @@ Main Style file-> assets/css/style.css
     font-size: 12px;
     width: 110px;
   }
+
+
+
+
+
+
+
+
+  .d-none {
+    background-color: #fff;
+    position: initial;
+    display: block;
+  }
+
+  .carousel-caption {
+    position: unset;
+    right: 15%;
+    bottom: 20px;
+    display: initial !important;
+    left: 15%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: center;
+    padding: 55px 0;
+  }
+
+
+  h5.text-dark {
+    padding: 50px 0 0 0 !important;
+  }
+
+  p.text-dark {
+    color: #343a40 !important;
+    padding: 0 10px 50px 10px !important;
+  }
+
 }
 
 .arrow {
