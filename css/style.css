@@ -65,15 +65,21 @@
 
   .carousel {
     padding: 50px;
+    height: 100%;
   }
-
+  .carousel-inner {
+    height: inherit;
+}
 
 
   .carousel-caption {
     left: 50% !important;
+    text-align: left;
+    padding: 30px;
   }
 
   #carouselBG {
+    height: 530px;
     background-image: url("https://www.transparenttextures.com/patterns/gplay.png");
     /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds-light.png"); */
     /* background-image: url("https://www.transparenttextures.com/patterns/diagmonds.png"); */
@@ -84,11 +90,12 @@
   }
 
   .capBG {
-    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 4px 100px 0px;
     background-color: #fff;
     position: absolute;
     top: 22px;
     right: 110px;
+    height: 115%;
   }
 }
 
@@ -173,7 +180,7 @@ ul {
 a {
   position: relative;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 540;
   outline: none !important;
   cursor: pointer;
   font-size: 17px;
@@ -182,6 +189,11 @@ a {
   transition: all 0.4s ease-in-out;
   color: #2a285f;
 }
+
+.carousel-indicators li{
+  background-color: #353839;
+}
+
 
 /*
 
@@ -416,6 +428,40 @@ Main Style file-> assets/css/style.css
   font-family: 'Poppins-Light' !important;
 }
 
+/* MEADIA FOR Landscape phones and portrait tablets                         tugugsygoisdybksoihb */
+@media (max-width: 767px) {
+  .d-none {
+    background-color: #fff;
+    position: initial;
+    display: block;
+  }
+
+  .carousel-caption {
+    position: unset;
+    right: 15%;
+    bottom: 20px;
+    display: initial !important;
+    left: 15%;
+    z-index: 10;
+    padding: 20px 0 15px 20px;
+    color: #fff;
+    text-align: left;
+    padding: 55px 0;
+  }
+
+  i.fas.fa-chevron-left.fa-2x {
+    display: none;
+  }
+
+  i.fas.fa-chevron-right.fa-2x {
+    display: none;
+  }
+
+
+}
+
+
+
 @media (max-width: 640px) {
   .panels {
     width: 100%;
@@ -531,16 +577,15 @@ Main Style file-> assets/css/style.css
     display: initial !important;
     left: 15%;
     z-index: 10;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px 0 15px 20px;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding: 55px 0;
   }
 
 
   h5.text-dark {
-    padding: 50px 0 0 0 !important;
+    padding: 50px 0 20px 10px !important;
   }
 
   p.text-dark {
@@ -1268,11 +1313,18 @@ Main Style file-> assets/css/style.css
 }
 
 body {
-  background-color: #e4e4e4;
+  /* background-color: #e4e4e4; */
+  background-color: #ffffff;
+}
+
+h5.text-dark {
+  font-family: 'Kameron', 'Roboto', sans-serif;
+  font-size: 2rem;
 }
 
 p {
   font-family: 'Roboto', sans-serif;
+  font-size: 14px;
 }
 
 .pslide {
@@ -1304,4 +1356,46 @@ fa {
 a.c-black.shadow-btn {
   margin: auto;
   width: max-content;
+  padding: 12px !important;
+
+}
+
+a.btn.btn-dark {
+  padding: 12px !important;
+  margin: 40px 0 0;
+}
+
+/* Divider css
+.devider{
+-webkit-text-size-adjust: 100%;
+--bg-color: rgba(26,26,26,1);
+--text-color: rgba(110,110,110,1);
+--a-color: rgba(90,120,120,1);
+--a-visited-color: rgba(120,120,90,1);
+--a-hover-color: rgba(211,211,211,1);
+--input-border-color: rgba(211,211,211,0.2);
+--input-placeholder-color: rgba(173,216,230,1);
+--dialog-bg-color: rgba(36,36,36,0.95);
+--bg-image: linear-gradient(rgba(26,26,26,1),rgba(26,26,26,1));
+--rw-accent: #5F7D4F;
+color: #161513;
+visibility: visible;
+box-sizing: border-box;
+list-style: none;
+background-repeat: no-repeat;
+-webkit-tap-highlight-color: rgba(0,0,0,0);
+-webkit-font-smoothing: antialiased;
+padding: 0;
+font-family: "Georgia","Times New Roman","Times","Garamond","Noto Sans Arabic","Noto Sans Arabic UI","Noto Sans Hebrew",sans-serif;
+font-weight: 400;
+margin: 0;
+font-size: 28px;
+line-height: 36.4px;
+} */
+
+hr.div-head {
+  /* border: 10px; */
+  width: 50px;
+  border-top: 5px solid rgba(30, 92, 250, 0.597);
+  margin-left: 10px;
 }
